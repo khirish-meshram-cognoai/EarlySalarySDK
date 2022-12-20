@@ -10,6 +10,7 @@
 		8D1BEAB9295212F700311D9B /* EarlySalarySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1BEAB8295212F700311D9B /* EarlySalarySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D1BEAC02952132D00311D9B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1BEABF2952132D00311D9B /* Constants.swift */; };
 		8D1BEAC22952135400311D9B /* EarlySalarySDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1BEAC12952135400311D9B /* EarlySalarySDK.swift */; };
+		8D715B98134902E69BE76D3E /* Pods_EarlySalarySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EC416163644A8D5AC1D92 /* Pods_EarlySalarySDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,9 @@
 		8D1BEAB8295212F700311D9B /* EarlySalarySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EarlySalarySDK.h; sourceTree = "<group>"; };
 		8D1BEABF2952132D00311D9B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8D1BEAC12952135400311D9B /* EarlySalarySDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlySalarySDK.swift; sourceTree = "<group>"; };
+		A8F6860520A97E6F6F0CA737 /* Pods-EarlySalarySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlySalarySDK.debug.xcconfig"; path = "Target Support Files/Pods-EarlySalarySDK/Pods-EarlySalarySDK.debug.xcconfig"; sourceTree = "<group>"; };
+		CF4EC416163644A8D5AC1D92 /* Pods_EarlySalarySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarlySalarySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAAE858EE123440AA24547E /* Pods-EarlySalarySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlySalarySDK.release.xcconfig"; path = "Target Support Files/Pods-EarlySalarySDK/Pods-EarlySalarySDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,17 +28,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D715B98134902E69BE76D3E /* Pods_EarlySalarySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C3121CEE822FC851931FDE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8F6860520A97E6F6F0CA737 /* Pods-EarlySalarySDK.debug.xcconfig */,
+				CFAAE858EE123440AA24547E /* Pods-EarlySalarySDK.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8D1BEAAB295212F700311D9B = {
 			isa = PBXGroup;
 			children = (
 				8D1BEAB7295212F700311D9B /* EarlySalarySDK */,
 				8D1BEAB6295212F700311D9B /* Products */,
+				5C3121CEE822FC851931FDE4 /* Pods */,
+				C669DBD70909D5EB8E5FBB35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +73,14 @@
 			path = EarlySalarySDK;
 			sourceTree = "<group>";
 		};
+		C669DBD70909D5EB8E5FBB35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF4EC416163644A8D5AC1D92 /* Pods_EarlySalarySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D1BEABC295212F700311D9B /* Build configuration list for PBXNativeTarget "EarlySalarySDK" */;
 			buildPhases = (
+				53DC3B4AACB9BBA0A1D396BC /* [CP] Check Pods Manifest.lock */,
 				8D1BEAB0295212F700311D9B /* Headers */,
 				8D1BEAB1295212F700311D9B /* Sources */,
 				8D1BEAB2295212F700311D9B /* Frameworks */,
@@ -130,6 +156,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53DC3B4AACB9BBA0A1D396BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EarlySalarySDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D1BEAB1295212F700311D9B /* Sources */ = {
@@ -266,6 +317,7 @@
 		};
 		8D1BEABD295212F700311D9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8F6860520A97E6F6F0CA737 /* Pods-EarlySalarySDK.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -278,6 +330,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,6 +349,7 @@
 		};
 		8D1BEABE295212F700311D9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFAAE858EE123440AA24547E /* Pods-EarlySalarySDK.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +362,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
